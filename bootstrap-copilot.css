@@ -1,0 +1,49 @@
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .box {
+      border: 3px solid red;
+    }
+
+    .container-fluid,
+    .row,
+    [class^="col"] {
+      padding: 0;
+      margin: 0;
+    }
+
+    .rightSide {
+      padding-top: 10px;
+    }
+
+    .inner {
+      margin: 5px;
+    }
+
+    .smallCol { height: 240px; }
+    .halfCol  { height: 125px; }
+    .midCol   { height: 260px; }
+
+    .row.last-row {
+      height: 260px;
+    }
+
+    .bigCol   { height: 240px; }
+    .underCol { height: 240px; }
+
+    @media (max-width: 750px) {
+      .smallCol,
+      .halfCol,
+      .midCol,
+      .bigCol,
+      .underCol {
+        height: 120px;
+      }
+
+      .row.last-row {
+        height: 120px;
+      }
+    }
